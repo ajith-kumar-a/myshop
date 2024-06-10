@@ -1,0 +1,392 @@
+/* Header part */
+
+* {
+    color: gold;
+   
+}
+
+body{
+    background-color: black !important;
+}
+
+header {
+    z-index: 1;
+    background-color: black;
+    text-align: left !important;
+    border-bottom: 2px solid goldenrod !important;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: sticky !important;
+    top: 0px !important;
+}
+
+.next {
+    display: none;
+}
+
+
+.logo {
+    vertical-align: middle;
+    padding-bottom: 10px;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    border: 2px solid gold;
+    /* border-radius: 50%; */
+}
+
+.title {
+    color: gold;
+    vertical-align: middle;
+    text-transform: capitalize !important;
+    text-shadow: 1px 3px 4px greenyellow !important;
+
+}
+
+.btn-outline-light {
+    --bs-btn-color: gold !important;
+    --bs-btn-border-color: gold !important;
+    --bs-btn-hover-bg: gold !important;
+
+}
+
+.form-control {
+    background-color: black !important;
+    border: 2px solid gold !important;
+    /* font-size: 15px; */
+    color: gold !important;
+}
+
+::placeholder {
+    color: gold !important;
+    opacity: 1;
+    /* Firefox */
+}
+
+.search-tab {
+    display: none;
+}
+
+
+/* Header End's Here */
+
+/* Navbar Start here */
+
+.navbar-brand {
+    display: none;
+}
+
+.nav-home-hide {
+    display: inline;
+}
+
+
+.navbar {
+    border-radius: 15px;
+    position: sticky !important;
+    top: 158px;
+    z-index: 1;
+}
+
+.nav-link {
+    color: gold !important;
+}
+
+.navbar-toggler-icon {
+    color: gold !important;
+
+}
+
+
+
+/* Footer */
+.end-page {
+    background-color: black;
+    color: gold;
+    margin-bottom: 0px;
+    text-align: center;
+    position: sticky;
+    margin-bottom: 0px;
+    border-top: 1px solid;
+    border-top-color: gold;
+}
+
+.end-page p {
+    margin-right: 10px;
+    text-align: right;
+}
+
+
+.center-page {
+    margin: 10px 15px;
+    z-index: -1;
+}
+
+
+.content-model {
+    border: 2px solid;
+    border-radius: 10px;
+    text-align: center;
+    overflow: scroll;
+    background-color: black;
+    height: 370px;
+}
+
+.image-bor {
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+.model-img {
+    float: left;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    padding: 10px;
+    border-radius: 20px;
+    border-radius: 50%;
+
+}
+
+.content-model::-webkit-scrollbar {
+    display: none;
+}
+
+.content-model p {
+    padding-right: 10px;
+    padding-top: 30px;
+    font-size: x-large;
+    color: gold;
+    vertical-align: middle;
+    text-transform: capitalize !important;
+    text-shadow: 1px 3px 4px greenyellow !important;
+}
+
+
+
+
+@media screen and (max-width:992px) {
+
+    .search-login {
+        display: none
+    }
+}
+
+
+
+@media screen and (max-width:768px) {
+
+
+    .navbar {
+
+        top: 205px;
+    }
+
+    .logo {
+        width: 103px;
+        height: 103px;
+    }
+
+
+    .next {
+        display: block;
+    }
+
+    header {
+        text-align: center !important;
+    }
+
+    .navbar-brand {
+        color: gold !important;
+        display: inline;
+    }
+
+    .nav-home-hide {
+        display: none;
+    }
+
+
+
+
+}
+
+
+@media screen and (max-width:767px) {
+
+    .search-tab {
+        display: block;
+    }
+
+
+
+}
+
+@media screen and (max-width:530px) {
+
+    .navbar {
+        top: 199px;
+    }
+}
+
+
+@media screen and (max-width:450px) {
+
+    .navbar {
+        top: 196px;
+    }
+}
+
+
+@media screen and (max-width:650px) {
+    .content-model p {
+        font-size: large;
+    }
+
+}
+
+
+@media screen and (max-width:412px) {
+
+    .model-img {
+        float: none !important;
+
+    }
+
+}
+
+
+@media screen and (max-width:320px) {
+
+    .navbar {
+        top: 193px;
+    }
+}
+
+
+/* 
+
+    .slider{
+        height: 250px;
+        margin: auto;
+        position: relative;
+        width:90%;
+        display: grid;
+        place-items: center;
+    }
+
+    .slide-track {
+        display: flex;
+        width: calc(250px *18);
+        animation: scroll 40s linear infinite;
+    }
+
+    @keyframes scroll {
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(calc(-250px *9));
+        }
+    }
+
+    .slide-track:hover{
+        animation-play-state:paused ;
+    }
+
+    .slide{
+        height: 200px;
+        width: 250px;
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        perspective: 100px;
+    }
+
+    .slide img{
+        width: 100%;
+        transition: transform 1s;
+    }
+
+
+    .slide img :hover{
+        transform: translateZ(20px);
+    }
+
+
+    .slider::before,
+    .slider::after{
+        background: linear-gradient(to right, white 0% ,black 100%);
+        content:'';
+        height:100%;
+        position: absolute;
+        width: 15%;
+        z-index: 2;
+
+    }
+
+    .slider::before{
+        left: 0;
+        top: 0;
+    }
+
+    .slider::after{
+        right: 0;
+        top: 0;
+        transform: rotateZ(180deg);
+    } */
+
+.porto-carousel {}
+
+.row {
+   
+    background-color: black;
+    padding: 20px 0px;
+    margin: 0px 0px !important;
+   
+    border-radius: 0px 0px 10px 10px;
+
+}
+
+.rows-promises{
+    text-align: center;
+}
+
+.m-b-xl{
+    border: 2px solid !important;
+}
+
+.Promises{
+    border: 2px solid;
+    text-align: center;
+    background-color: black;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.card-body{
+    border: 2px solid gold !important;
+    color: gold !important;
+}
+
+.card{
+    --bs-card-bg: black !important;
+}
+
+.card-header{
+    color: gold !important;
+}
+
+.info-title{
+    padding-left: 15px;
+}
+
+
+.map-loc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* About us */
+.container{
+
+}
